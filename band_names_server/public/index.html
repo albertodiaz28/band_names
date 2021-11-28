@@ -25,6 +25,14 @@
         socket.on('mensaje', ( payload ) => {
             console.log(payload.admin);
         });
+        socket.on('nuevo-mensaje', ( payload ) => {
+            console.log(payload);
+        });
+
+        socket.on('active-bands', ( payload ) => {
+            console.clear();
+            console.table(payload);
+        });
     </script>
 </body>
 </html>
