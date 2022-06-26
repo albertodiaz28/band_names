@@ -21,7 +21,7 @@ class SocketService with ChangeNotifier {
 
   void _initConfig() {
 
-    this._socket = IO.io('http://192.168.1.53:3001/', {
+    this._socket = IO.io('https://flutter-band-sockets.herokuapp.com/', {
       'transports': ['websocket'],
       'autoConnect': true
     });
